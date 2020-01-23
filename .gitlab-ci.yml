@@ -1,4 +1,5 @@
 image: emdupre/jupyter-book
 
-script:
-    - pwd
+build:
+    script:
+        - pwd
