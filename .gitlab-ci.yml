@@ -1,4 +1,4 @@
-image emdupre/jupyter-book
+image: emdupre/jupyter-book
 
 script:
     - pwd
