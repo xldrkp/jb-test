@@ -5,17 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Jupyter Book</title>
+  <title>Automatically building and hosting your book with Netlify</title>
   <meta name="description" content="# Automatically building and hosting your book with Netlify[Netlify](https://www.netlify.com/) is a continuous deployment service that can **automatically bu...">
 
-  <link rel="canonical" href="https://jupyterbook.org/content/advanced/netlify.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="https://jupyterbook.org/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/content/advanced/netlify.html">
+  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/feed.xml">
 
-  <meta property="og:url"         content="https://jupyterbook.org/content/advanced/netlify.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/content/advanced/netlify.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Jupyter Book" />
+<meta property="og:title"       content="Automatically building and hosting your book with Netlify" />
 <meta property="og:description" content="# Automatically building and hosting your book with Netlify[Netlify](https://www.netlify.com/) is a continuous deployment service that can **automatically bu..." />
-<meta property="og:image"       content="https://jupyterbook.org/images/logo/logo.png" />
+<meta property="og:image"       content="http://0.0.0.0:4000/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://jupyterbook.org/content/advanced/netlify.html",
-  "headline": "Jupyter Book",
-  "datePublished": "2020-01-23T14:52:34+01:00",
-  "dateModified": "2020-01-23T14:52:34+01:00",
+  "mainEntityOfPage": "http://0.0.0.0:4000/content/advanced/netlify.html",
+  "headline": "Automatically building and hosting your book with Netlify",
+  "datePublished": "2020-01-23T08:10:52-06:00",
+  "dateModified": "2020-01-23T08:10:52-06:00",
   "description": "# Automatically building and hosting your book with Netlify[Netlify](https://www.netlify.com/) is a continuous deployment service that can **automatically bu...",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jupyterbook.org",
+      "url": "http://0.0.0.0:4000",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://jupyterbook.org",
+    "url": "http://0.0.0.0:4000",
     "height": 60,
     "width": 60
   }
@@ -325,7 +325,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://jupyterbook.org") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -1880,21 +1880,21 @@ For the purposes of this tutorial, we’ll assume that your book is hosted on Gi
 <p>When you select the “GitHub” option, you’ll be asked to grant permission for Netlify to access your GitHub account.
 Authorizing access will take you to the next step of the build process, where you can select your Jupyter Book repository.</p>
 
-<p><img src="../images/netlify-cd.png" alt="Netlify continous deployment" /></p>
+<p><img src="/content/images/netlify-cd.png" alt="Netlify continous deployment" /></p>
 
 <p>Once you’ve selected the correct repository, you’ll need to supply build instructions.
 For a standard Jupyter Book, the build instructions should build the book and then serve the resulting HTML with Jekyll.
-That is, the <em>Build command</em> should be <code class="highlighter-rouge">make site &amp;&amp; jekyll build</code> and the <em>Publish directory</em> should be <code class="highlighter-rouge">_site</code>.</p>
+That is, the <em>Build command</em> should be <code class="language-plaintext highlighter-rouge">make site &amp;&amp; jekyll build</code> and the <em>Publish directory</em> should be <code class="language-plaintext highlighter-rouge">_site</code>.</p>
 
 <p>You’ll also need to select the appropriate branch to build your repository from.
-In this example, we’ll use the <code class="highlighter-rouge">master</code> branch.</p>
+In this example, we’ll use the <code class="language-plaintext highlighter-rouge">master</code> branch.</p>
 
-<p><img src="../images/netlify-build.png" alt="Netlify build command" /></p>
+<p><img src="/content/images/netlify-build.png" alt="Netlify build command" /></p>
 
 <!-- #region {"tags": ["popout"]} -->
 <p><strong>Note</strong>: The default python environment is python 2.7,
 which means that some packages may fail to install.
-You can update the python environment by supplying a <code class="highlighter-rouge">runtime.txt</code> file,
+You can update the python environment by supplying a <code class="language-plaintext highlighter-rouge">runtime.txt</code> file,
 as detailed in <a href="https://www.netlify.com/docs/build-settings/#build-environment-variables">the Netlify documentation</a>.
 For a full list of available environments,
 please see the <a href="https://github.com/netlify/build-image/blob/xenial/included_software.md#languages">Netlify build image details</a>.
@@ -1911,10 +1911,10 @@ In order to have a more memorable address, you can update your site’s name.</p
 <p>From the site dashboard, select <em>Domain settings</em>.
 This will take you to a sub-menu, where you can choose to update your site name.</p>
 
-<p><img src="../images/netlify-domain.png" alt="Netlify configure domain" /></p>
+<p><img src="/content/images/netlify-domain.png" alt="Netlify configure domain" /></p>
 
 <p>You can enter a memorable, unique name here to describe your Jupyter Book!
-Note that it will be prepended to <code class="highlighter-rouge">.netlify.com</code> so, <code class="highlighter-rouge">MY-BOOK</code> will become <code class="highlighter-rouge">MY-BOOK.netlify.com</code>.</p>
+Note that it will be prepended to <code class="language-plaintext highlighter-rouge">.netlify.com</code> so, <code class="language-plaintext highlighter-rouge">MY-BOOK</code> will become <code class="language-plaintext highlighter-rouge">MY-BOOK.netlify.com</code>.</p>
 
 <p>You can also use a custom domain (i.e., one that you have purchased through a DNS registrar).
 See the <a href="https://www.netlify.com/docs/custom-domains/">Netlify documentation on custom domains</a> for more details on this process.</p>

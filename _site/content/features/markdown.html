@@ -5,17 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Jupyter Book</title>
+  <title>Creating book content</title>
   <meta name="description" content="# Creating book contentThe two kinds of files that contain course content are:* Jupyter Notebooks* Markdown filesEach are contained in the `content/` folder ...">
 
-  <link rel="canonical" href="https://jupyterbook.org/content/features/markdown.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="https://jupyterbook.org/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/content/features/markdown.html">
+  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/feed.xml">
 
-  <meta property="og:url"         content="https://jupyterbook.org/content/features/markdown.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/content/features/markdown.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Jupyter Book" />
+<meta property="og:title"       content="Creating book content" />
 <meta property="og:description" content="# Creating book contentThe two kinds of files that contain course content are:* Jupyter Notebooks* Markdown filesEach are contained in the `content/` folder ..." />
-<meta property="og:image"       content="https://jupyterbook.org/images/logo/logo.png" />
+<meta property="og:image"       content="http://0.0.0.0:4000/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://jupyterbook.org/content/features/markdown.html",
-  "headline": "Jupyter Book",
-  "datePublished": "2020-01-23T14:52:34+01:00",
-  "dateModified": "2020-01-23T14:52:34+01:00",
+  "mainEntityOfPage": "http://0.0.0.0:4000/content/features/markdown.html",
+  "headline": "Creating book content",
+  "datePublished": "2020-01-23T08:10:52-06:00",
+  "dateModified": "2020-01-23T08:10:52-06:00",
   "description": "# Creating book contentThe two kinds of files that contain course content are:* Jupyter Notebooks* Markdown filesEach are contained in the `content/` folder ...",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jupyterbook.org",
+      "url": "http://0.0.0.0:4000",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://jupyterbook.org",
+    "url": "http://0.0.0.0:4000",
     "height": 60,
     "width": 60
   }
@@ -325,7 +325,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://jupyterbook.org") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -1858,7 +1858,7 @@ initFunction(initPrint)
   <li>Markdown files</li>
 </ul>
 
-<p>Each are contained in the <code class="highlighter-rouge">content/</code> folder and referenced from <code class="highlighter-rouge">_data/toc.yml</code>.</p>
+<p>Each are contained in the <code class="language-plaintext highlighter-rouge">content/</code> folder and referenced from <code class="language-plaintext highlighter-rouge">_data/toc.yml</code>.</p>
 
 <p>If the file is markdown, it will be copied over with front-matter YAML added so
 that Jekyll can parse it.</p>
@@ -1867,7 +1867,7 @@ that Jekyll can parse it.</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Python (and any language-specific) code still works as expected"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As does non-language code.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As does non-language code.
 </code></pre></div></div>
 <!-- #endregion -->
 
@@ -1876,7 +1876,7 @@ that Jekyll can parse it.</p>
 <p>You may notice that there’s a sidebar to the right (if your screen is wide enough).
 These are automatically generated from the headers that are present in your page.
 The sidebar will automatically capture all 2nd and 3rd level section headers.
-The best way to designate these headers is with <code class="highlighter-rouge">#</code> characters at the beginning
+The best way to designate these headers is with <code class="language-plaintext highlighter-rouge">#</code> characters at the beginning
 of a line.</p>
 
 <h3 id="heres-a-third-level-header">Here’s a third-level header</h3>
@@ -1924,7 +1924,7 @@ so long as they point to a file that’s inside of the repository.</p>
 
 <p>Here’s an image relative to the book content root</p>
 
-<p><img src="../images/C-3PO_droid.png" alt="" /></p>
+<p><img src="/content/images/C-3PO_droid.png" alt="" /></p>
 
 <h3 id="adding-movies">Adding movies</h3>
 

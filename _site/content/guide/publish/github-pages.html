@@ -5,17 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Jupyter Book</title>
+  <title>Publishing your book with GitHub Pages</title>
   <meta name="description" content="# Publishing your book with GitHub PagesGitHub pages is a [free service that GitHub provides](https://pages.github.com/) to let you host website contentusing...">
 
-  <link rel="canonical" href="https://jupyterbook.org/content/guide/publish/github-pages.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="https://jupyterbook.org/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/content/guide/publish/github-pages.html">
+  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/feed.xml">
 
-  <meta property="og:url"         content="https://jupyterbook.org/content/guide/publish/github-pages.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/content/guide/publish/github-pages.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Jupyter Book" />
+<meta property="og:title"       content="Publishing your book with GitHub Pages" />
 <meta property="og:description" content="# Publishing your book with GitHub PagesGitHub pages is a [free service that GitHub provides](https://pages.github.com/) to let you host website contentusing..." />
-<meta property="og:image"       content="https://jupyterbook.org/images/logo/logo.png" />
+<meta property="og:image"       content="http://0.0.0.0:4000/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://jupyterbook.org/content/guide/publish/github-pages.html",
-  "headline": "Jupyter Book",
-  "datePublished": "2020-01-23T14:52:34+01:00",
-  "dateModified": "2020-01-23T14:52:34+01:00",
+  "mainEntityOfPage": "http://0.0.0.0:4000/content/guide/publish/github-pages.html",
+  "headline": "Publishing your book with GitHub Pages",
+  "datePublished": "2020-01-23T08:10:52-06:00",
+  "dateModified": "2020-01-23T08:10:52-06:00",
   "description": "# Publishing your book with GitHub PagesGitHub pages is a [free service that GitHub provides](https://pages.github.com/) to let you host website contentusing...",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jupyterbook.org",
+      "url": "http://0.0.0.0:4000",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://jupyterbook.org",
+    "url": "http://0.0.0.0:4000",
     "height": 60,
     "width": 60
   }
@@ -325,7 +325,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://jupyterbook.org") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -1854,8 +1854,8 @@ initFunction(initPrint)
 <p>GitHub pages is a <a href="https://pages.github.com/">free service that GitHub provides</a> to let you host website content
 using your GitHub repositories.</p>
 
-<p>Once you’ve built the intermediate files for your book (in <code class="highlighter-rouge">_build</code>) or built the HTML
-for your book (in <code class="highlighter-rouge">_site</code>), you can push your book contents to GitHub so that
+<p>Once you’ve built the intermediate files for your book (in <code class="language-plaintext highlighter-rouge">_build</code>) or built the HTML
+for your book (in <code class="language-plaintext highlighter-rouge">_site</code>), you can push your book contents to GitHub so that
 others can access your book.</p>
 
 <p><strong>Prerequisites</strong></p>
@@ -1865,7 +1865,7 @@ others can access your book.</p>
     <p><strong>If you are building your book’s HTML manually</strong></p>
 
     <p>We assume that you have already <a href="book-html.html">built your book’s HTML</a> and that
-your HTML content is in the <code class="highlighter-rouge">_site/</code> folder. We also assume that you have a
+your HTML content is in the <code class="language-plaintext highlighter-rouge">_site/</code> folder. We also assume that you have a
 <a href="../03_build.html#Create-an-online-repository-for-your-book">GitHub repository created for your book</a>.</p>
   </li>
   <li>
@@ -1887,34 +1887,34 @@ GitHub-pages on the repository. To do this, follow these steps:</p>
 
 <ol>
   <li>Confirm that your book’s HTML is built. You should see a
-collection of HTML files/folders in the <code class="highlighter-rouge">_site</code> folder.</li>
+collection of HTML files/folders in the <code class="language-plaintext highlighter-rouge">_site</code> folder.</li>
   <li>
-    <p>Install the <code class="highlighter-rouge">ghp-import</code> tool. This is a command-line tool for
+    <p>Install the <code class="language-plaintext highlighter-rouge">ghp-import</code> tool. This is a command-line tool for
 quickly pushing some built HTML to a GitHub-pages branch.</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>ghp-import
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Use <code class="highlighter-rouge">ghp-import</code> to push your book’s HTML onto the <code class="highlighter-rouge">gh-pages</code> branch of your repository.</p>
+    <p>Use <code class="language-plaintext highlighter-rouge">ghp-import</code> to push your book’s HTML onto the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch of your repository.</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ghp-import <span class="nt">-n</span> <span class="nt">-p</span> <span class="nt">-f</span> _site
 </code></pre></div>    </div>
 
-    <p>The <code class="highlighter-rouge">-n</code> adds a <code class="highlighter-rouge">.nojekyll</code> file to your book’s built HTML, and the <code class="highlighter-rouge">-p</code> and <code class="highlighter-rouge">-f</code> tell
-<code class="highlighter-rouge">ghp-import</code> to push the contents of <code class="highlighter-rouge">_site/</code> to the <code class="highlighter-rouge">gh-pages</code> branch. Run <code class="highlighter-rouge">ghp-import -h</code>
+    <p>The <code class="language-plaintext highlighter-rouge">-n</code> adds a <code class="language-plaintext highlighter-rouge">.nojekyll</code> file to your book’s built HTML, and the <code class="language-plaintext highlighter-rouge">-p</code> and <code class="language-plaintext highlighter-rouge">-f</code> tell
+<code class="language-plaintext highlighter-rouge">ghp-import</code> to push the contents of <code class="language-plaintext highlighter-rouge">_site/</code> to the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch. Run <code class="language-plaintext highlighter-rouge">ghp-import -h</code>
 to see more configuration options for this tool.</p>
   </li>
-  <li>Confirm that your <code class="highlighter-rouge">gh-pages</code> branch has newly-pushed HTML for your book. You should see
-a <code class="highlighter-rouge">.nojekyll</code> file as well as the contents of <code class="highlighter-rouge">_site/</code> in the <strong>root</strong> of your <code class="highlighter-rouge">gh-pages</code> branch.</li>
+  <li>Confirm that your <code class="language-plaintext highlighter-rouge">gh-pages</code> branch has newly-pushed HTML for your book. You should see
+a <code class="language-plaintext highlighter-rouge">.nojekyll</code> file as well as the contents of <code class="language-plaintext highlighter-rouge">_site/</code> in the <strong>root</strong> of your <code class="language-plaintext highlighter-rouge">gh-pages</code> branch.</li>
   <li>
     <p>Enable GitHub site building for your repository.</p>
 
-    <p>From your GitHub repository, click <code class="highlighter-rouge">Settings</code> then scroll down to the
-<code class="highlighter-rouge">GitHub Pages</code> section. You should see the message <code class="highlighter-rouge">Your site is published at &lt;YOUR-URL&gt;</code>.
-Ensure that you’re building from the <code class="highlighter-rouge">gh-pages</code> branch.</p>
+    <p>From your GitHub repository, click <code class="language-plaintext highlighter-rouge">Settings</code> then scroll down to the
+<code class="language-plaintext highlighter-rouge">GitHub Pages</code> section. You should see the message <code class="language-plaintext highlighter-rouge">Your site is published at &lt;YOUR-URL&gt;</code>.
+Ensure that you’re building from the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch.</p>
   </li>
-  <li>Go to the URL listed at <code class="highlighter-rouge">&lt;YOUR-URL&gt;</code> and you should see your live site.</li>
+  <li>Go to the URL listed at <code class="language-plaintext highlighter-rouge">&lt;YOUR-URL&gt;</code> and you should see your live site.</li>
 </ol>
 
 <h2 id="automatically-build-your-books-html-with-the-github-pages-jekyll-builder">Automatically build your book’s HTML with the GitHub Pages Jekyll builder</h2>
@@ -1925,21 +1925,21 @@ To do so, follow these steps:</p>
 
 <ol>
   <li>Confirm that each page’s HTML is built. You should see a
-collection of HTML files/folders in the <code class="highlighter-rouge">_build</code> folder.</li>
+collection of HTML files/folders in the <code class="language-plaintext highlighter-rouge">_build</code> folder.</li>
   <li>Commit and push the changes to your repository.</li>
   <li>
     <p>Enable GitHub site building for your repository.</p>
 
-    <p>From your GitHub repository, click <code class="highlighter-rouge">Settings</code> then scroll down to the
-<code class="highlighter-rouge">GitHub Pages</code> section. You should see the message <code class="highlighter-rouge">Your site is published at &lt;YOUR-URL&gt;</code>.
+    <p>From your GitHub repository, click <code class="language-plaintext highlighter-rouge">Settings</code> then scroll down to the
+<code class="language-plaintext highlighter-rouge">GitHub Pages</code> section. You should see the message <code class="language-plaintext highlighter-rouge">Your site is published at &lt;YOUR-URL&gt;</code>.
 Ensure that you’re building from the correct folder.</p>
   </li>
-  <li>Go to the URL listed at <code class="highlighter-rouge">&lt;YOUR-URL&gt;</code> and you should see your live site.</li>
+  <li>Go to the URL listed at <code class="language-plaintext highlighter-rouge">&lt;YOUR-URL&gt;</code> and you should see your live site.</li>
 </ol>
 
 <p>That should be all that is needed for GitHub Pages to automatically build
-and publish your site. Any time you push changes to the <code class="highlighter-rouge">_build/</code> folder
-(by running <code class="highlighter-rouge">jupyter-book build</code> locally and pushing the changes to GitHub),
+and publish your site. Any time you push changes to the <code class="language-plaintext highlighter-rouge">_build/</code> folder
+(by running <code class="language-plaintext highlighter-rouge">jupyter-book build</code> locally and pushing the changes to GitHub),
 your book content will update.</p>
 
             </div>

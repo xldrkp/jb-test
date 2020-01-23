@@ -5,17 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Jupyter Book</title>
+  <title>Jupytext with Jupyter Book</title>
   <meta name="description" content="# Jupytext with Jupyter Book✨**experimental**✨It's also possible to build Jupyter Books using [Jupytext](https://jupytext.readthedocs.io), a tool fortwo-way ...">
 
-  <link rel="canonical" href="https://jupyterbook.org/content/features/jupytext.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="https://jupyterbook.org/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/content/features/jupytext.html">
+  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/feed.xml">
 
-  <meta property="og:url"         content="https://jupyterbook.org/content/features/jupytext.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/content/features/jupytext.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Jupyter Book" />
+<meta property="og:title"       content="Jupytext with Jupyter Book" />
 <meta property="og:description" content="# Jupytext with Jupyter Book✨**experimental**✨It's also possible to build Jupyter Books using [Jupytext](https://jupytext.readthedocs.io), a tool fortwo-way ..." />
-<meta property="og:image"       content="https://jupyterbook.org/images/logo/logo.png" />
+<meta property="og:image"       content="http://0.0.0.0:4000/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://jupyterbook.org/content/features/jupytext.html",
-  "headline": "Jupyter Book",
-  "datePublished": "2020-01-23T14:52:34+01:00",
-  "dateModified": "2020-01-23T14:52:34+01:00",
+  "mainEntityOfPage": "http://0.0.0.0:4000/content/features/jupytext.html",
+  "headline": "Jupytext with Jupyter Book",
+  "datePublished": "2020-01-23T08:10:52-06:00",
+  "dateModified": "2020-01-23T08:10:52-06:00",
   "description": "# Jupytext with Jupyter Book✨**experimental**✨It's also possible to build Jupyter Books using [Jupytext](https://jupytext.readthedocs.io), a tool fortwo-way ...",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jupyterbook.org",
+      "url": "http://0.0.0.0:4000",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://jupyterbook.org",
+    "url": "http://0.0.0.0:4000",
     "height": 60,
     "width": 60
   }
@@ -325,7 +325,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://jupyterbook.org") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -1854,7 +1854,7 @@ initFunction(initPrint)
 <p>✨<strong>experimental</strong>✨</p>
 
 <p>It’s also possible to build Jupyter Books using <a href="https://jupytext.readthedocs.io">Jupytext</a>, a tool for
-two-way conversion between Jupyter Notebooks an text-based versions of a Jupyter Notebook (e.g., <code class="highlighter-rouge">.md</code> or <code class="highlighter-rouge">.py</code>).</p>
+two-way conversion between Jupyter Notebooks an text-based versions of a Jupyter Notebook (e.g., <code class="language-plaintext highlighter-rouge">.md</code> or <code class="language-plaintext highlighter-rouge">.py</code>).</p>
 
 <p>Using Jupytext allows you to store your Jupyter Notebooks as <strong>text files</strong>, which makes them much better for
 collaboration and “diffing” using a tool like Git. The drawbacks are that you no longer keep the outputs with
@@ -1901,9 +1901,9 @@ ax.text(0, 0, “Jupytext is great!”, fontdict={‘size’: 40, ‘horizontala
 Book works with a subset of common ones:</p>
 
 <ul>
-  <li>Markdown files (<code class="highlighter-rouge">.md</code> or <code class="highlighter-rouge">.markdown</code>)</li>
-  <li>Python files meant for Jupytext (<code class="highlighter-rouge">.py</code> with Sphinx-Gallery or <code class="highlighter-rouge">%%</code> syntax to break cells)</li>
-  <li>RMarkdown files (<code class="highlighter-rouge">.Rmd</code>)</li>
+  <li>Markdown files (<code class="language-plaintext highlighter-rouge">.md</code> or <code class="language-plaintext highlighter-rouge">.markdown</code>)</li>
+  <li>Python files meant for Jupytext (<code class="language-plaintext highlighter-rouge">.py</code> with Sphinx-Gallery or <code class="language-plaintext highlighter-rouge">%%</code> syntax to break cells)</li>
+  <li>RMarkdown files (<code class="language-plaintext highlighter-rouge">.Rmd</code>)</li>
 </ul>
 
 <h2 id="a-recommended-workflow-with-jupytext-and-notebooks">A recommended workflow with Jupytext and notebooks</h2>

@@ -8,14 +8,14 @@
   <title>Automatically building and hosting your book with Netlify</title>
   <meta name="description" content="        Automatically building and hosting your book with Netlify    Netlify is a continuous deployment service that can automatically build an updated copy ...">
 
-  <link rel="canonical" href="https://jupyterbook.org/guide/publish/netlify.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="https://jupyterbook.org/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/guide/publish/netlify.html">
+  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/feed.xml">
 
-  <meta property="og:url"         content="https://jupyterbook.org/guide/publish/netlify.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/guide/publish/netlify.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Automatically building and hosting your book with Netlify" />
 <meta property="og:description" content="        Automatically building and hosting your book with Netlify    Netlify is a continuous deployment service that can automatically build an updated copy ..." />
-<meta property="og:image"       content="https://jupyterbook.org/images/logo/logo.png" />
+<meta property="og:image"       content="http://0.0.0.0:4000/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://jupyterbook.org/guide/publish/netlify.html",
+  "mainEntityOfPage": "http://0.0.0.0:4000/guide/publish/netlify.html",
   "headline": "Automatically building and hosting your book with Netlify",
-  "datePublished": "2020-01-23T14:52:34+01:00",
-  "dateModified": "2020-01-23T14:52:34+01:00",
+  "datePublished": "2020-01-23T08:10:52-06:00",
+  "dateModified": "2020-01-23T08:10:52-06:00",
   "description": "        Automatically building and hosting your book with Netlify    Netlify is a continuous deployment service that can automatically build an updated copy ...",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jupyterbook.org",
+      "url": "http://0.0.0.0:4000",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://jupyterbook.org",
+    "url": "http://0.0.0.0:4000",
     "height": 60,
     "width": 60
   }
@@ -325,7 +325,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://jupyterbook.org") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
