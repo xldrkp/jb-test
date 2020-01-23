@@ -3,3 +3,4 @@ image: emdupre/jupyter-book
 build:
     script:
         - pwd
+        - docker run --rm --security-opt label:disable -v /builds/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-test:/srv/jekyll -p 4000:4000 -it -u 1000:1000 emdupre/jupyter-book
