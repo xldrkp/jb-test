@@ -1,5 +1,4 @@
-image: collaborating.tuhh.de:5005/hoou-t
-uhh/projekte/quaxp-gruppe/jupyter-book-test:latest
+image: collaborating.tuhh.de:5005/hoou-t uhh/projekte/quaxp-gruppe/jupyter-book-test:latest 
 
 build:
     script:
