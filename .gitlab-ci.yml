@@ -2,7 +2,6 @@ image: collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-t
 
 build:
   script:
-    - pwd
     - docker run collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-test:latest 
   artifacts:
     paths:
