@@ -3,4 +3,4 @@ image: collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-t
 build:
   script:
     - pwd
-    - docker run --entrypoint ls collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-test:latest
+    - docker run --entrypoint /usr/bin/ls collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-test:latest -c ls -la
