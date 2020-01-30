@@ -2,3 +2,4 @@ _build/
 .vscode/
 .sass-cache/
 _site/
+public/

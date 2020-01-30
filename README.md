@@ -1,3 +1,7 @@
 Run locally:
 
-    docker run --rm --security-opt label:disable -v /full/path/QuaXP:/srv/jekyll -p 4000:4000 -it -u 1000:1000 emdupre/jupyter-book
+    docker run -it collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-test: latest bundle install && bundle exec jekyll build -d public
+
+
+
+
