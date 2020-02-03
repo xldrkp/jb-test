@@ -70,6 +70,8 @@ review:pages:
         paths:
             - vendor/bundle
         policy: pull
+    dependencies:
+        - build_book
         
 review:start:
     stage: review
