@@ -12,6 +12,8 @@ stages:
     - clean
     - linkchecker
 
+
+
 before_script:
     # https://docs.gitlab.com/ee/ci/ssh_keys/README.html
     - mkdir -p ~/.ssh
@@ -19,6 +21,13 @@ before_script:
     
     - export LC_ALL="C.UTF-8"; export LANG="en_US.UTF-8"; export LANGUAGE="en_US.UTF-8"
     - export BUNDLE_PATH="vendor/bundle"
+
+build_book:
+    stage: setup
+    image: python/python
+    script:
+        - pip install jupyter-book
+        - jupyter-book build ./
 
 prepare:
     stage: setup
