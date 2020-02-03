@@ -28,6 +28,9 @@ build_book:
     script:
         - pip install jupyter-book
         - jupyter-book build ./
+    artifacts:
+        paths:
+            - _build
 
 prepare:
     stage: setup
