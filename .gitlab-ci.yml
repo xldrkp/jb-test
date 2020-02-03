@@ -1,11 +1,173 @@
 image: collaborating.tuhh.de:5005/hoou-tuhh/projekte/quaxp-gruppe/jupyter-book-test:latest
 
-build:
+variables:
+    JEKYLL_ENV: production
+  
+stages:
+    - setup
+    - test
+    - pages
+    - review
+    - deploy
+    - clean
+    - linkchecker
+
+before_script:
+    # https://docs.gitlab.com/ee/ci/ssh_keys/README.html
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    
+    - export LC_ALL="C.UTF-8"; export LANG="en_US.UTF-8"; export LANGUAGE="en_US.UTF-8"
+    - export BUNDLE_PATH="vendor/bundle"
+
+prepare:
+    stage: setup
+    cache:
+        key: "$CI_COMMIT_REF_SLUG"
+        paths:
+            - vendor/bundle
+    script:
+        - bundle install
+
+test:
+    stage: test
+    script:
+        - 'perl -i -pe ''s!.*baseurl:\s.*!baseurl: "$ENV{''REVIEW_BASE_DIR''}/~$ENV{''CI_COMMIT_REF_NAME''}/"\n!g'' _config.yml'
+        - cat _config.yml
+        - bundle install
+        - bundle exec jekyll build -d test
+    cache:
+        key: "$CI_COMMIT_REF_SLUG"
+        paths:
+            - vendor/bundle
+        policy: pull
+    except:
+        - master
+        
+review:pages:
+    stage: pages
+    script:
+        - bundle install
+        - 'perl -i -pe ''s!.*baseurl:\s.*!baseurl: "$ENV{''REVIEW_BASE_DIR''}/~$ENV{''CI_COMMIT_REF_NAME''}/"\n!g'' _config.yml'
+        - cat _config.yml
+        - bundle exec jekyll build -d public
+    except:
+        - master
+    artifacts:
+        paths:
+            - public
+    cache:
+        key: "$CI_COMMIT_REF_SLUG"
+        paths:
+            - vendor/bundle
+        policy: pull
+        
+review:start:
+    stage: review
+    script:
+        - echo "$REVIEW_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$REVIEW_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${REVIEW_SSH_PORT}" "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}" "mkdir -p /usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+        - scp -P "${REVIEW_SSH_PORT}" -r public/* "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}":"/usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+    except:
+        - master
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        url: https://${REVIEW_PROXY_HOST_NAME}${REVIEW_BASE_DIR}~${CI_COMMIT_REF_NAME}/
+        on_stop: review:stop
+
+  
+review:stop:
+    stage: review
+    script:
+        - echo "$REVIEW_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$REVIEW_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${REVIEW_SSH_PORT}" "${REVIEW_SSH_USER}"@"${REVIEW_HOST_NAME}" "rm -rf /usr/share/nginx/html/~${CI_COMMIT_REF_NAME}"
+    when: manual
+    except:
+        - master
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        action: stop
+        
+pages:
+    stage: pages
+    only:
+        - master
+    script:
+        - bundle install
+        # Wenn `url: https://$PROXY_HOST_NAME/` verwendet wird,
+        # dann wird `$ENV{''BASE_DIR''}/~$ENV{''CI_COMMIT_REF_NAME''}` NICHT
+        # benötigt
+        - 'perl -i -pe ''s!.*baseurl:\s.*!baseurl: "$ENV{''BASE_DIR''}"\n!g'' _config.yml'
+        #- 'perl -i -pe ''s!.*baseurl:\s.*!baseurl: "/"\n!g'' _config.yml'
+        - cat _config.yml
+        - bundle exec jekyll build -d public
+    artifacts:
+        paths:
+            - public
+    cache:
+        key: "$CI_COMMIT_REF_SLUG"
+        paths:
+            - vendor/bundle
+        policy: pull
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    except:
+        - schedules
+    script:
+        - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${SSH_PORT}" "${SSH_USER}"@"${HOST_NAME}" "mkdir -p /usr/share/nginx/html"
+        - scp -P "${SSH_PORT}" -r public/* "${SSH_USER}"@"${HOST_NAME}":"/usr/share/nginx/html"
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        url: https://$PROXY_HOST_NAME$BASE_DIR
+        #url: https://$PROXY_HOST_NAME/
+        
+clean:
+    stage: clean
+    script:
+        - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - ssh -p "${SSH_PORT}" "${SSH_USER}"@"${HOST_NAME}" "rm -rf /usr/share/nginx/html/*"
+    when: manual
+    only:
+        - master
+    environment:
+        name: $CI_COMMIT_REF_NAME
+        action: stop
+        
+.linkchecker:intern:
+  stage: linkchecker
+  except:
+    - master
+  image:
+    name: linkchecker/linkchecker
+    entrypoint: [""]
   script:
-    - bundle install
-    - bundle exec jekyll build -d public
-  artifacts:
-    paths:
-      - "public/"
-      
+    - linkchecker --recursion-level 10 --threads 10 --no-status --no-robots --no-warnings --ignore-url 'https://fonts.gstatic.com/{0,1}$' https://${REVIEW_PROXY_HOST_NAME}/${REVIEW_BASE_DIR}/~${CI_COMMIT_REF_NAME}/
+  when: manual
+    
+.linkchecker:all:
+  stage: linkchecker
+  except:
+    - master
+  image:
+    name: linkchecker/linkchecker
+    entrypoint: [""]
+  script:
+    - linkchecker --recursion-level 10 --threads 10 --no-status --no-robots --no-warnings --check-extern --ignore-url 'https://fonts.gstatic.com/{0,1}$' https://${REVIEW_PROXY_HOST_NAME}/${REVIEW_BASE_DIR}/~${CI_COMMIT_REF_NAME}/
+  when: manual
 
