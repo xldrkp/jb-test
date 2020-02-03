@@ -24,7 +24,7 @@ before_script:
 
 build_book:
     stage: setup
-    image: python/python
+    image: python
     script:
         - pip install jupyter-book
         - jupyter-book build ./
