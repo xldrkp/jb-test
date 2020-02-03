@@ -52,9 +52,13 @@ test:
         policy: pull
     except:
         - master
+    dependencies:
+        - build_book
         
 review:pages:
     stage: pages
+    dependencies:
+        - build_book
     script:
         - bundle install
         - 'perl -i -pe ''s!.*baseurl:\s.*!baseurl: "$ENV{''REVIEW_BASE_DIR''}/~$ENV{''CI_COMMIT_REF_NAME''}/"\n!g'' _config.yml'
@@ -70,8 +74,6 @@ review:pages:
         paths:
             - vendor/bundle
         policy: pull
-    dependencies:
-        - build_book
         
 review:start:
     stage: review
