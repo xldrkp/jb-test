@@ -21,26 +21,189 @@
 #
 # See the links below for an example.
 
-# Top-level page
-- title: Home
+- title: Introduction
   url: /intro
   not_numbered: true
+  expand_sections: true
+  sections:
+  - title: What is Machine Learning
+    url: /machinelearning
+    not_numbered: true
 
-# External link
-- title: GitHub repository
-  url: https://github.com/jupyter/jupyter-book
-  external: true
+  - title: Get started with Python (for advanced level)
+    url: /python
+    not_numbered: true
+    expand_subsections:
+    subsections:
+
+    - title: Syntax and arithmetic
+      url: /syntaxandarithmetic
+      not_numbered: true
+
+    - title: Strings
+      url: /strings
+      not_numbered: true
+
+    - title: Lists and indexes
+      url: /listsandindexes
+      not_numbered: true
+
+    - title: Control flow statement
+      url: /controlflowstatement
+      not_numbered: true
+
+    - title: Functions
+      url: /functions
+      not_numbered: true
+
+    - title: Classes
+      url: /classes
+      not_numbered: true
+
+    - title: The Pandas library
+      url: /pandaslibrary
+      not_numbered: true
+
+    - title: Plot graphics
+      url: /plotgraphics
+      not_numbered: true
+
+
+- title: Part 1 - Numerical data
+  url: /numericaldata
   not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Lecture
+    url: /lecture1
+    not_numbered: true
+    expand_subsections:
+    subsections:
 
-# Adds a searchbar link
-- title: Search
-  search: true
+    - title: Presentation of the dataset
+      url: /presentationdataset1
+      not_numbered: true
 
-# Divider for meta-pages and content page
+    - title: Eye opener
+      url: /eyeopener1
+      not_numbered: true
+
+    - title: Errors detection
+      url: /errorsdetetion1
+      not_numbered: true
+
+    - title: Mitigation techniques
+      url: /mitigationtechniques1
+      not_numbered: true
+
+    - title: Conclusion
+      url: /conclusion1
+      not_numbered: true
+
+  - title: Quiz
+    url: /quiz1
+    not_numbered: true
+
+  - title: Practical exercise
+    url: /practicalexercise1
+    not_numbered: true
+
+
+- title: Part 2 - Image data
+  url: /imagedata
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Lecture
+    url: /lecture2
+    not_numbered: true
+    expand_subsections:
+    subsections:
+
+    - title: Presentation of the dataset
+      url: /presentationdataset2
+      not_numbered: true
+
+    - title: Eye opener
+      url: /eyeopener2
+      not_numbered: true
+
+    - title: Errors detection
+      url: /errorsdetetion2
+      not_numbered: true
+
+    - title: Mitigation techniques
+      url: /mitigationtechniques2
+      not_numbered: true
+
+    - title: Conclusion
+      url: /conclusion2
+      not_numbered: true
+
+  - title: Quiz
+    url: /quiz2
+    not_numbered: true
+
+  - title: Practical exercise
+    url: /practicalexercise2
+    not_numbered: true
+
+
+- title: Part 3 - Text data
+  url: /textdata
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Lecture
+    url: /lecture3
+    not_numbered: true
+    expand_subsections:
+    subsections:
+
+    - title: Presentation of the dataset
+      url: /presentationdataset3
+      not_numbered: true
+
+    - title: Eye opener
+      url: /eyeopener3
+      not_numbered: true
+
+    - title: Errors detection
+      url: /errorsdetetion3
+      not_numbered: true
+
+    - title: Mitigation techniques
+      url: /mitigationtechniques3
+      not_numbered: true
+
+    - title: Conclusion
+      url: /conclusion3
+      not_numbered: true
+
+  - title: Quiz
+    url: /quiz3
+    not_numbered: true
+
+  - title: Practical exercise
+    url: /practicalexercise3
+    not_numbered: true
+
+
+- title: Conclusion
+  url: /conclusion
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: General review
+    url: /generalreview
+    not_numbered: true
+
+  - title: Final quiz
+    url: /finalquiz
+    not_numbered: true
+
 - divider: true
 
-# Add a header and sample content section
-- header: Demo textbook
 
 # A chapter w/ a collection of sections beneath it
 - title: Features and customization
