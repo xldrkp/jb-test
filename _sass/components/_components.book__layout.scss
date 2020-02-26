@@ -84,6 +84,28 @@ $topbar-height: 60px;
   }
 }
 
+.c-textbook__metadata_list {
+  margin-bottom: 20px;
+}
+
+.c-textbook__metadata_box {
+ display: flex;
+ column-gap: 20%;
+ flex-wrap: wrap;
+}
+
+.c-textbook__metadata_content {
+  max-width: 40%;
+}
+
+.c-textbook__metadata_text {
+  font-weight: 700;
+}
+
+.c-textbook__metadata_line {
+  border: solid 0.5px #c3c3c3;
+}
+
 .sidebar__right {
   // By default we hide the sidebar
   display: none;

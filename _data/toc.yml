@@ -30,7 +30,7 @@
     url: /machinelearning
     not_numbered: true
 
-  - title: Get started with Python (for advanced level)
+  - title: Get started with Python
     url: /python
     not_numbered: true
     expand_subsections:
