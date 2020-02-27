@@ -13,6 +13,21 @@
       {% include topbar.html %}
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
+              <div class="c-textbook__metadata_list" id="textbook_metadata"> 
+                <div><span class="c-textbook__metadata_text">Title of the section:</span> {{ page.section }}</div> 
+                <div class="c-textbook__metadata_box">
+                  <div class="c-textbook__metadata_content"> 
+                    <div><span class="c-textbook__metadata_text">Goal:</span> {{ page.goal }} </div> 
+                    <div><span class="c-textbook__metadata_text">Time needed:</span> {{ page.time }} </div>
+                  </div> 
+                  <div class="c-textbook__metadata_content"> 
+                    <div><span class="c-textbook__metadata_text">Table of contents:</span> {{ page.toccontent }} </div>
+                    <div><span class="c-textbook__metadata_text">Prerequisites:</span> {{ page.prerequisites }}</div> 
+                  </div>
+                </div>
+                <div> <span class="c-textbook__metadata_text">Level:</span> {{ page.level }} </div>
+              </div>
+              <hr class="c-textbook__metadata_line">
               {{ content }}
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
