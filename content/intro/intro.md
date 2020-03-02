@@ -1,53 +1,45 @@
-# Books with Jupyter and Jekyll
+---
+section: Introduction
+goal: "Get an insight of what this is all about."
+time: "10 min"
+toccontent: ""
+prerequisites: "Curiosity"
+level: "Beginner and expert"
+---
 
-<img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left">
+## About the course 
 
-sdfJupyter adsfBook lets you build an online book using a collection of Jupyter Notebooks
-and Markdown files. Its output is similar to the excellent [Bookdown](https://bookdown.org/yihui/bookdown/) tool,
-and adds extra functionality for people running a Jupyter stack.
+Commodo exercitation aliquip qui cillum sint ullamco. Anim id laboris in laborum reprehenderit mollit nostrud. Lorem aute elit dolore esse aute eu labore ad velit nisi laborum laboris pariatur nulla. Ipsum laborum officia Lorem dolore amet ad occaecat est. Exercitation officia laboris eu commodo consequat exercitation mollit tempor id irure.
 
-For an example of a book built with Jupyter Book, see the [textbook for Data 100](https://www.textbook.ds100.org/) at UC Berkeley.
+## Is it for me?
 
-Here are a few features of Jupyter Book
+Let's see: What do you know already about machine learning?
 
-* All course content is written in markdown and Jupyter Notebooks, stored in `notebooks/`
-* The Jupyter Book repo comes packaged with helper scripts to convert these into Jekyll pages (in `scripts/`) that can be hosted for free on GitHub
-* Pages can have [Binder](https://mybinder.org) or JupyterHub links automatically added for interactivity.
-* The website itself is based on Jekyll, and is highly extensible and can be freely-hosted on GitHub.
-* There are lots of nifty HTML features under-the-hood, such as Turbolinks fast-navigation and
-  click-to-copy in code cells.
+<iframe src="https://h5p.org/h5p/embed/716110" width="694" height="463" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
-## Getting started
+Reprehenderit ullamco aliqua id est qui voluptate eiusmod et id esse velit. Tempor do proident occaecat elit velit sunt dolor id nostrud aliquip ullamco. Est do culpa sint tempor consequat est Lorem veniam.
 
-To get started, you may be interested in the following links.
-Here are a few links of interest:
+## What will I learn?
 
-* **[Quickstart](features/features)** is a quick demo and overview of Jupyter Book.
+Tempor elit aliquip dolor eu. Qui eu velit ut aliqua dolor ad. Pariatur deserunt adipisicing eiusmod exercitation. Consequat voluptate nostrud ea voluptate in excepteur fugiat excepteur ut voluptate deserunt sunt. Ad do cillum excepteur magna qui aliquip veniam ipsum officia.
 
-* **[The Jupyter Book Guide](guide/01_overview)**
-  will step you through the process of configuring and building your own Jupyter Book.
+## How will I learn?
 
-* **[The Jupyter Book template repo](https://github.com/jupyter/jupyter-book)** is the template
-  repository you'll use as a start for your Jupyter Book.
+Et qui mollit deserunt minim elit tempor Lorem dolore id. Velit id veniam consequat irure quis amet aliqua dolore laboris in qui anim et esse. Dolor sit deserunt anim id. Incididunt quis minim quis veniam sit id dolor qui est veniam qui est. Qui proident adipisicing ut elit deserunt magna reprehenderit. Consequat duis occaecat incididunt labore voluptate cupidatat magna irure reprehenderit fugiat est. Culpa labore nulla et tempor Lorem.
 
-* **A demo of the Jupyter Book** can be browsed via the sidebar to the left.
+## What do I have to know to join?
 
-## Installation
+- Officia ea incididunt qui nulla Lorem nostrud fugiat mollit est duis.
+- Incididunt dolor nostrud ea nulla.
+- Ad ullamco magna tempor eu dolor fugiat non occaecat duis labore veniam nostrud.
+- Cupidatat culpa nostrud consequat sunt cupidatat ea commodo sint excepteur ex nostrud reprehenderit esse.
 
-Here's a brief rundown of how to create your own Jupyter Book using this site. For a more
-complete guide, see [the Jupyter Book guide](guide/01_overview).
+## What do I get?
 
-* Fork the Jupyter Book template repo
-* Replace the demo notebooks in `content/` with your own notebooks and markdown files.
-* Create a Table of Contents yaml file by editing `_data/toc.yaml`.
-* Generate the Jekyll markdown for your notebooks by running `scripts/generate_book.py`
-* Push your changes to GitHub (or wherever you host your site)!
+Commodo cillum nisi Lorem quis do do. Nulla mollit consectetur anim aute aliqua laboris nisi nulla magna velit minim minim labore laborum. Id et dolor consequat id reprehenderit esse esse minim enim sint non. Mollit anim consectetur do adipisicing id enim. Irure ex irure nulla occaecat ad nostrud eu velit amet enim dolore dolor officia. Cupidatat occaecat est irure tempor dolore sunt cillum labore eiusmod sunt.
 
-## Acknowledgements
+## Who's doing all this here?
 
-Jupyter Book was originally created by [Sam Lau][sam] and [Chris Holdgraf][chris]
-with support of the **UC Berkeley Data Science Education Program and the Berkeley
-Institute for Data Science**.
-
-[sam]: http://www.samlau.me/
-[chris]: https://predictablynoisy.com
+- Irure sit elit est occaecat ipsum mollit esse anim ipsum.
+- Consectetur qui proident laborum commodo fugiat incididunt pariatur excepteur esse proident labore excepteur.
+- Laborum voluptate enim non ullamco qui et nostrud.
