@@ -1,5 +1,6 @@
 ---
-section: Introduction
+metadata: true
+section: "Introduction"
 goal: "Elit in veniam sit magna ipsum ullamco ea non id amet tempor commodo irure."
 time: "30 min"
 toccontent: "Dolor laboris occaecat occaecat culpa ea minim dolore laboris minim consectetur esse ad."

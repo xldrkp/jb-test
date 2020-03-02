@@ -13,6 +13,7 @@
       {% include topbar.html %}
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
+              {% if page.metadata == true %}
               <div class="c-textbook__metadata_list" id="textbook_metadata"> 
                 <div><span class="c-textbook__metadata_text">Title of the section:</span> {{ page.section }}</div> 
                 <div class="c-textbook__metadata_box">
@@ -28,6 +29,7 @@
                 <div> <span class="c-textbook__metadata_text">Level:</span> {{ page.level }} </div>
               </div>
               <hr class="c-textbook__metadata_line">
+              {% endif %}
               {{ content }}
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
