@@ -30,6 +30,10 @@ $color-sidebar-divider: #bbb !default;
   }
 }
 
+.c-sidebar__title a {
+  color: #222222;
+}
+
 /* [1] */
 .c-sidebar__chapters {
   list-style: none;
