@@ -80,19 +80,19 @@
     expand_subsections:
     subsections:
 
-    - title: Presentation of the dataset
-      url: /presentationdataset1
+    - title: The AIS data - messages sent by a ship along its trip
+      url: /1-1-AIS-data
       not_numbered: true
 
-    - title: Eye opener
+    - title: Let's start with a few experiments
       url: /eyeopener1
       not_numbered: true
 
-    - title: Errors detection
+    - title: How can we detect errors in AIS data?
       url: /errorsdetetion1
       not_numbered: true
 
-    - title: Mitigation techniques
+    - title: Towards fixing the data
       url: /mitigationtechniques1
       not_numbered: true
 
