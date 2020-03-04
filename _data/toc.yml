@@ -81,7 +81,7 @@
     subsections:
 
     - title: The AIS data - messages sent by a ship along its trip
-      url: /1-1-AIS-data
+      url: /chapter1-numerical/1-1-AIS-data
       not_numbered: true
 
     - title: Let's start with a few experiments
