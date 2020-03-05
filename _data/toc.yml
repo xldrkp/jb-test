@@ -75,7 +75,7 @@
   expand_sections: true
   sections:
   - title: Lecture
-    url: /lecture1
+    url: /chapter1-numerical/1-0-lecture
     not_numbered: true
     expand_subsections:
     subsections:
@@ -85,19 +85,19 @@
       not_numbered: true
 
     - title: Let's start with a few experiments
-      url: /eyeopener1
+      url: /chapter1-numerical/1-2-experiments
       not_numbered: true
 
     - title: How can we detect errors in AIS data?
-      url: /errorsdetetion1
+      url: /chapter1-numerical/1-3-errors-detection
       not_numbered: true
 
     - title: Towards fixing the data
-      url: /mitigationtechniques1
+      url: /chapter1-numerical/1-4-mitigation
       not_numbered: true
 
     - title: Conclusion
-      url: /conclusion1
+      url: /chapter1-numerical/1-5-conclusion
       not_numbered: true
 
   - title: Quiz
