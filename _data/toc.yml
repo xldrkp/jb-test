@@ -201,6 +201,16 @@
   - title: Final quiz
     url: /finalquiz
     not_numbered: true
+    
+    
+- title: Appendix
+  url: /appendix/home
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Modification to raw AIS data from U.S. Marine Cadastre
+    url: /appendix/1-AIS-modifications
+    not_numbered: true
 
 - divider: true
 
