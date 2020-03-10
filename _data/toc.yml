@@ -22,7 +22,7 @@
 # See the links below for an example.
 
 - title: Introduction
-  url: /intro
+  url: /0-introduction
   not_numbered: true
   expand_sections: true
   sections:
