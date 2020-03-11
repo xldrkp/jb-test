@@ -26,12 +26,16 @@
   not_numbered: true
   expand_sections: true
   sections:
-  - title: What is Machine Learning
-    url: /machinelearning
+  - title: What is machine learning?
+    url: /introduction/0-machine-learning
+    not_numbered: true
+    
+  - title: Supervised learning used in this course
+    url: /introduction/0-supervised-learning
     not_numbered: true
 
   - title: Get started with Python
-    url: /python
+    url: /introduction/0-python
     not_numbered: true
     expand_subsections:
     subsections:
