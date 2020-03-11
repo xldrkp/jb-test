@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+    function Beginner(){
+        $("#beginner").show();
+    }
+
+    function Expert(){
+        $("#beginner").hide();
+    }
+ 
+    </script>
+  </head>
   {% include head.html %}
   <body>
     <!-- Include the ThebeLab config so it gets reloaded on each page -->
@@ -26,7 +39,7 @@
                     <div><span class="c-textbook__metadata_text">Prerequisites:</span> {{ page.prerequisites }}</div> 
                   </div>
                 </div>
-                <div> <span class="c-textbook__metadata_text">Level:</span> {{ page.level }} </div>
+                <div> <span class="c-textbook__metadata_text">Level:</span> <a href="#" onclick="Beginner">Beginner</a> | <a href="#" onclick="Expert">Expert</a> </div>
               </div>
               <hr class="c-textbook__metadata_line">
               {% endif %}
