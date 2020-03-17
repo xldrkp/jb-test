@@ -75,35 +75,11 @@
   expand_sections: true
   sections:
   - title: Lecture
-<<<<<<< HEAD
-    url: /part_1/lecture1
-=======
     url: /chapter1-numerical/1-0-lecture
->>>>>>> development
     not_numbered: true
     expand_subsections:
     subsections:
 
-<<<<<<< HEAD
-    - title: Presentation of the dataset
-      url: /part_1/presentationdataset1
-      not_numbered: true
-
-    - title: Eye opener
-      url: /part_1/eyeopener1
-      not_numbered: true
-
-    - title: Errors detection
-      url: /part_1/errorsdetetion1
-      not_numbered: true
-
-    - title: Mitigation techniques
-      url: /part_1/mitigationtechniques1
-      not_numbered: true
-
-    - title: Conclusion
-      url: /part_1/conclusion1
-=======
     - title: The AIS data - messages sent by a ship along its trip
       url: /chapter1-numerical/1-1-AIS-data
       not_numbered: true
@@ -122,7 +98,6 @@
 
     - title: Conclusion
       url: /chapter1-numerical/1-5-conclusion
->>>>>>> development
       not_numbered: true
 
   - title: Quiz

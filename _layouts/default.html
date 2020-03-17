@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript">
-    function Beginner(){
-        $("#beginner").show();
-    }
-
-    function Expert(){
-        $("#beginner").hide();
-    }
- 
-    </script>
-  </head>
   {% include head.html %}
   <body>
     <!-- Include the ThebeLab config so it gets reloaded on each page -->
@@ -44,6 +31,7 @@
               <hr class="c-textbook__metadata_line">
               {% endif %}
               {{ content }}
+              <script src="../assets/js/page/contenttoggle.js"></script>
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
               {% include page-nav.html %}
