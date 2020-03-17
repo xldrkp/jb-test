@@ -22,184 +22,194 @@
 # See the links below for an example.
 
 - title: Introduction
-  url: /intro
+  url: /intro/intro
   not_numbered: true
   expand_sections: true
   sections:
   - title: What is Machine Learning
-    url: /machinelearning
+    url: /intro/machinelearning
     not_numbered: true
 
   - title: Get started with Python
-    url: /python
+    url: /intro/python
     not_numbered: true
     expand_subsections:
     subsections:
 
     - title: Syntax and arithmetic
-      url: /syntaxandarithmetic
+      url: /intro/syntaxandarithmetic
       not_numbered: true
 
     - title: Strings
-      url: /strings
+      url: /intro/strings
       not_numbered: true
 
     - title: Lists and indexes
-      url: /listsandindexes
+      url: /intro/listsandindexes
       not_numbered: true
 
     - title: Control flow statement
-      url: /controlflowstatement
+      url: /intro/controlflowstatement
       not_numbered: true
 
     - title: Functions
-      url: /functions
+      url: /intro/functions
       not_numbered: true
 
     - title: Classes
-      url: /classes
+      url: /intro/classes
       not_numbered: true
 
     - title: The Pandas library
-      url: /pandaslibrary
+      url: /intro/pandaslibrary
       not_numbered: true
 
     - title: Plot graphics
-      url: /plotgraphics
+      url: /intro/plotgraphics
       not_numbered: true
 
 
 - title: Part 1 - Numerical data
-  url: /numericaldata
+  url: /part_1/numericaldata
   not_numbered: true
   expand_sections: true
   sections:
   - title: Lecture
-    url: /lecture1
+    url: /chapter1-numerical/1-0-lecture
     not_numbered: true
     expand_subsections:
     subsections:
 
-    - title: Presentation of the dataset
-      url: /presentationdataset1
+    - title: The AIS data - messages sent by a ship along its trip
+      url: /chapter1-numerical/1-1-AIS-data
       not_numbered: true
 
-    - title: Eye opener
-      url: /eyeopener1
+    - title: Let's start with a few experiments
+      url: /chapter1-numerical/1-2-experiments
       not_numbered: true
 
-    - title: Errors detection
-      url: /errorsdetetion1
+    - title: How can we detect errors in AIS data?
+      url: /chapter1-numerical/1-3-errors-detection
       not_numbered: true
 
-    - title: Mitigation techniques
-      url: /mitigationtechniques1
+    - title: Towards fixing the data
+      url: /chapter1-numerical/1-4-mitigation
       not_numbered: true
 
     - title: Conclusion
-      url: /conclusion1
+      url: /chapter1-numerical/1-5-conclusion
       not_numbered: true
 
   - title: Quiz
-    url: /quiz1
+    url: /part_1/quiz1
     not_numbered: true
 
   - title: Practical exercise
-    url: /practicalexercise1
+    url: /part_1/practicalexercise1
     not_numbered: true
 
 
 - title: Part 2 - Image data
-  url: /imagedata
+  url: /part_2/imagedata
   not_numbered: true
   expand_sections: true
   sections:
   - title: Lecture
-    url: /lecture2
+    url: /part_2/lecture2
     not_numbered: true
     expand_subsections:
     subsections:
 
     - title: Presentation of the dataset
-      url: /presentationdataset2
+      url: /part_2/presentationdataset2
       not_numbered: true
 
     - title: Eye opener
-      url: /eyeopener2
+      url: /part_2/eyeopener2
       not_numbered: true
 
     - title: Errors detection
-      url: /errorsdetetion2
+      url: /part_2/errorsdetetion2
       not_numbered: true
 
     - title: Mitigation techniques
-      url: /mitigationtechniques2
+      url: /part_2/mitigationtechniques2
       not_numbered: true
 
     - title: Conclusion
-      url: /conclusion2
+      url: /part_2/conclusion2
       not_numbered: true
 
   - title: Quiz
-    url: /quiz2
+    url: /part_2/quiz2
     not_numbered: true
 
   - title: Practical exercise
-    url: /practicalexercise2
+    url: /part_2/practicalexercise2
     not_numbered: true
 
 
 - title: Part 3 - Text data
-  url: /textdata
+  url: /part_3/textdata
   not_numbered: true
   expand_sections: true
   sections:
   - title: Lecture
-    url: /lecture3
+    url: /part_3/lecture3
     not_numbered: true
     expand_subsections:
     subsections:
 
     - title: Presentation of the dataset
-      url: /presentationdataset3
+      url: /part_3/presentationdataset3
       not_numbered: true
 
     - title: Eye opener
-      url: /eyeopener3
+      url: /part_3/eyeopener3
       not_numbered: true
 
     - title: Errors detection
-      url: /errorsdetetion3
+      url: /part_3/errorsdetetion3
       not_numbered: true
 
     - title: Mitigation techniques
-      url: /mitigationtechniques3
+      url: /part_3/mitigationtechniques3
       not_numbered: true
 
     - title: Conclusion
-      url: /conclusion3
+      url: /part_3/conclusion3
       not_numbered: true
 
   - title: Quiz
-    url: /quiz3
+    url: /part_3/quiz3
     not_numbered: true
 
   - title: Practical exercise
-    url: /practicalexercise3
+    url: /part_3/practicalexercise3
     not_numbered: true
 
 
 - title: Conclusion
-  url: /conclusion
+  url: /conclusion/conclusion
   not_numbered: true
   expand_sections: true
   sections:
   - title: General review
-    url: /generalreview
+    url: /conclusion/generalreview
     not_numbered: true
 
   - title: Final quiz
-    url: /finalquiz
+    url: /conclusion/finalquiz
+    not_numbered: true
+    
+    
+- title: Appendix
+  url: /appendix/home
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Modification to raw AIS data from U.S. Marine Cadastre
+    url: /appendix/1-AIS-modifications
     not_numbered: true
 
 - divider: true
