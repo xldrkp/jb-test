@@ -41,31 +41,31 @@
     subsections:
 
     - title: Syntax and arithmetic
-      url: /syntaxandarithmetic
+      url: /introduction/python/0-1-syntax-arithmetic
       not_numbered: true
 
     - title: Strings
-      url: /strings
+      url: /introduction/python/0-2-strings
       not_numbered: true
 
     - title: Lists and indexes
-      url: /listsandindexes
+      url: /introduction/python/0-3-lists
       not_numbered: true
 
     - title: Control flow statement
-      url: /controlflowstatement
+      url: /introduction/python/0-4-control-flow
       not_numbered: true
 
     - title: Functions
-      url: /functions
+      url: /introduction/python/0-5-functions
       not_numbered: true
 
     - title: Classes
-      url: /classes
+      url: /introduction/python/0-6-classes
       not_numbered: true
 
     - title: The Pandas library
-      url: /pandaslibrary
+      url: /introduction/python/0-7-pandas
       not_numbered: true
 
     - title: Plot graphics
