@@ -111,6 +111,15 @@
   - title: Biased data
     url: /chapter1-numerical/1-4-biased
     not_numbered: true
+    expand_subsections:
+    subsections:
+    - title: Prediction from all data vs. splitted dataset
+      url: /chapter1-numerical/1-4-1-splitted
+      not_numbered: true
+    
+    - title: Prediction with identical data
+      url: /chapter1-numerical/1-4-2-identical
+      not_numbered: true
 
   - title: Conclusion
     url: /chapter1-numerical/1-5-conclusion
