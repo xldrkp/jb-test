@@ -1,9 +1,8 @@
 ---
 metadata: true
 section: "Introduction"
-goal: "Elit in veniam sit magna ipsum ullamco ea non id amet tempor commodo irure."
+goal: "Elit in veniam sit magna ipsum ullamco ea non id amet tempor commodo irure.Eiusmod consequat quis consectetur officia consequat exercitation deserunt eu duis est nostrud voluptate enim adipisicing. Minim tempor dolore exercitation dolore culpa ea sint magna nulla pariatur. Aute cillum nostrud eu ut adipisicing commodo. Veniam id pariatur duis elit dolore sint eiusmod ipsum ullamco ad."
 time: "30 min"
-toccontent: "Dolor laboris occaecat occaecat culpa ea minim dolore laboris minim consectetur esse ad."
 prerequisites: "Consectetur ad eiusmod nulla mollit nisi amet irure dolor deserunt id enim esse."
 ---
 
@@ -24,3 +23,5 @@ Tempor excepteur cillum sit aute tempor qui eiusmod eu dolor. Velit enim occaeca
 
 Commodo aliqua culpa mollit culpa duis excepteur sit consectetur Lorem commodo culpa. Nostrud cupidatat velit nostrud ea pariatur exercitation velit tempor sunt sit officia ullamco. Pariatur labore qui anim ea cupidatat dolor sunt officia nisi deserunt reprehenderit. Aliquip do culpa nisi sunt incididunt deserunt. Eu est fugiat elit aliqua nulla nostrud incididunt. Pariatur consequat nisi nisi eiusmod reprehenderit irure.
 <span class="expert-end"></span>
+
+<script src="../assets/js/page/contenttoggle.js"></script>

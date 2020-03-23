@@ -3,7 +3,6 @@ metadata: true
 section: Introduction
 goal: "Get an insight of what this is all about."
 time: "10 min"
-toccontent: ""
 prerequisites: "Curiosity"
 ---
 
