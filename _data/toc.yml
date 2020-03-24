@@ -120,6 +120,10 @@
     - title: Prediction with identical data
       url: /chapter1-numerical/1-4-2-identical
       not_numbered: true
+    
+    - title: Attributes selection
+      url: /chapter1-numerical/1-4-3-att-selection
+      not_numbered: true
 
   - title: Conclusion
     url: /chapter1-numerical/1-5-conclusion
