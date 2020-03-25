@@ -113,10 +113,6 @@
     not_numbered: true
     expand_subsections:
     subsections:
-    - title: Prediction from all data vs. splitted dataset
-      url: /chapter1-numerical/1-4-1-splitted
-      not_numbered: true
-    
     - title: Type of task and predicted attributes
       url: /chapter1-numerical/1-4-4-types
       not_numbered: true
@@ -124,7 +120,11 @@
     - title: Attributes selection
       url: /chapter1-numerical/1-4-3-att-selection
       not_numbered: true
-
+      
+    - title: Prediction from all data vs. splitted dataset
+      url: /chapter1-numerical/1-4-1-splitted
+      not_numbered: true
+    
   - title: Conclusion
     url: /chapter1-numerical/1-5-conclusion
     not_numbered: true
