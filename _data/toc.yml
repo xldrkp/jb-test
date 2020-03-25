@@ -121,6 +121,10 @@
       url: /chapter1-numerical/1-4-2-identical
       not_numbered: true
     
+    - title: Type of task and predicted attributes
+      url: /chapter1-numerical/1-4-4-types
+      not_numbered: true
+    
     - title: Attributes selection
       url: /chapter1-numerical/1-4-3-att-selection
       not_numbered: true
