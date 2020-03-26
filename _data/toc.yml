@@ -33,6 +33,10 @@
   - title: Supervised learning used in this course
     url: /introduction/0-supervised-learning
     not_numbered: true
+    
+  - title: .csv files - data format used in the course
+    url: /introduction/0-data
+    not_numbered: true
 
   - title: Get started with Python
     url: /introduction/0-python
