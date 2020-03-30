@@ -69,7 +69,7 @@
       not_numbered: true
 
     - title: Plot graphics
-      url: /plotgraphics
+      url: /introduction/python/0-8-plot
       not_numbered: true
 
 
