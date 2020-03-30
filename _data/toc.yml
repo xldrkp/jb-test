@@ -64,10 +64,6 @@
       url: /introduction/python/0-5-functions
       not_numbered: true
 
-    - title: Classes
-      url: /introduction/python/0-6-classes
-      not_numbered: true
-
     - title: The Pandas library
       url: /introduction/python/0-7-pandas
       not_numbered: true
