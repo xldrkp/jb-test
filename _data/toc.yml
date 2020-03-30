@@ -34,6 +34,10 @@
     url: /introduction/0-supervised-learning
     not_numbered: true
     
+  - title: Main types of graphs used in this course
+    url: /introduction/0-graphs
+    not_numbered: true
+    
   - title: .csv files - data format used in the course
     url: /introduction/0-data
     not_numbered: true
