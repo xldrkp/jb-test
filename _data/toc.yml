@@ -112,29 +112,25 @@
       url: /chapter1-numerical/1-2-3-whattodo
       not_numbered: true
 
-  - title: Incorrect data
-    url: /chapter1-numerical/1-3-incorrect
-    not_numbered: true
-
   - title: Biased data
-    url: /chapter1-numerical/1-4-biased
+    url: /chapter1-numerical/1-3-biased
     not_numbered: true
     expand_subsections:
     subsections:
     - title: Type of task and predicted attributes
-      url: /chapter1-numerical/1-4-4-types
+      url: /chapter1-numerical/1-3-1-types
       not_numbered: true
     
     - title: Attributes selection
-      url: /chapter1-numerical/1-4-3-att-selection
+      url: /chapter1-numerical/1-3-2-att-selection
       not_numbered: true
       
     - title: Prediction from all data vs. splitted dataset
-      url: /chapter1-numerical/1-4-1-splitted
+      url: /chapter1-numerical/1-3-3-splitted
       not_numbered: true
     
   - title: Conclusion
-    url: /chapter1-numerical/1-5-conclusion
+    url: /chapter1-numerical/1-4-conclusion
     not_numbered: true
 
 
