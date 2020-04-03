@@ -132,6 +132,11 @@
   - title: Conclusion
     url: /chapter1-numerical/1-4-conclusion
     not_numbered: true
+    expand_subsections:
+    subsections:
+    - title: Practical task
+      url: /chapter1-numerical/1-4-1-practical-task
+      not_numbered: true
 
 
 - title: Part 2 - Image data
