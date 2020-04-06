@@ -78,7 +78,7 @@
 
 
 - title: Part 1 - Numerical data
-  url: /part_1/numericaldata
+  url: /chapter1-numerical/numericaldata
   not_numbered: true
   expand_sections: true
   sections:
@@ -109,7 +109,7 @@
       not_numbered: true
 
   - title: Quiz
-    url: /part_1/quiz1
+    url: /chapter1-numerical/quiz1
     not_numbered: true
 
   - title: Practical exercise
