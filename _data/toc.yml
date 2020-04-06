@@ -22,50 +22,58 @@
 # See the links below for an example.
 
 - title: Introduction
-  url: /intro/intro
+  url: /0-introduction
   not_numbered: true
   expand_sections: true
   sections:
-  - title: What is Machine Learning
-    url: /intro/machinelearning
+  - title: What is machine learning?
+    url: /introduction/0-machine-learning
+    not_numbered: true
+    
+  - title: Supervised learning used in this course
+    url: /introduction/0-supervised-learning
+    not_numbered: true
+    
+  - title: Main types of graphs used in this course
+    url: /introduction/0-graphs
+    not_numbered: true
+    
+  - title: .csv files - data format used in the course
+    url: /introduction/0-data
     not_numbered: true
 
   - title: Get started with Python
-    url: /intro/python
+    url: /introduction/0-python
     not_numbered: true
     expand_subsections:
     subsections:
 
     - title: Syntax and arithmetic
-      url: /intro/syntaxandarithmetic
+      url: /introduction/python/0-1-syntax-arithmetic
       not_numbered: true
 
     - title: Strings
-      url: /intro/strings
+      url: /introduction/python/0-2-strings
       not_numbered: true
 
     - title: Lists and indexes
-      url: /intro/listsandindexes
+      url: /introduction/python/0-3-lists
       not_numbered: true
 
     - title: Control flow statement
-      url: /intro/controlflowstatement
+      url: /introduction/python/0-4-control-flow
       not_numbered: true
 
     - title: Functions
-      url: /intro/functions
-      not_numbered: true
-
-    - title: Classes
-      url: /intro/classes
+      url: /introduction/python/0-5-functions
       not_numbered: true
 
     - title: The Pandas library
-      url: /intro/pandaslibrary
+      url: /introduction/python/0-7-pandas
       not_numbered: true
 
     - title: Plot graphics
-      url: /intro/plotgraphics
+      url: /introduction/python/0-8-plot
       not_numbered: true
 
 
