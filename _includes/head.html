@@ -44,8 +44,6 @@
   <script src="{{ site.js_url | relative_url }}/page/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
-  <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Load nbinteract for widgets -->
@@ -84,6 +82,11 @@
   <!-- Hide cell code -->
   <script src="{{ site.js_url | relative_url }}/page/hide-cell.js" async></script>
 
+  <!-- Content Toggle Beginner/Expert -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
   <!-- Printing the screen -->
   {% include js/print.html %}
+
 </head>
