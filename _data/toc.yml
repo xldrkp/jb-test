@@ -137,6 +137,10 @@
     - title: Practical task
       url: /chapter1-numerical/1-4-1-practical-task
       not_numbered: true
+      
+    - title: Practical task (Prototype nbgrader)
+      url: /chapter1-numerical/1-final
+      not_numbered: true
 
 
 - title: Part 2 - Image data
