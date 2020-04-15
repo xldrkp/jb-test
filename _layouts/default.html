@@ -15,13 +15,15 @@
             <div class="c-textbook__content" id="textbook_content">
               {% if page.metadata == true %}
               <div class="c-textbook__metadata_list" id="textbook_metadata"> 
-                <div><span class="c-textbook__metadata_text">Title of the section:</span> {{ page.section }}</div> 
+                <div><span class="c-textbook__metadata_text">Section:</span> {{ page.section }}</div> 
                 <div class="c-textbook__metadata_box">
                     <div><span class="c-textbook__metadata_text">Goal:</span> {{ page.goal }} </div> 
                     <div><span class="c-textbook__metadata_text">Time needed:</span> {{ page.time }} </div>
+                  </div> 
+                  <div class="c-textbook__metadata_content">
                     <div><span class="c-textbook__metadata_text">Prerequisites:</span> {{ page.prerequisites }}</div> 
                 </div>
-                <div> <span class="c-textbook__metadata_text">Level:</span> <a href="#" onclick="Beginner">Beginner</a> | <a href="#" onclick="Expert">Expert</a> </div>
+                <div> <span class="c-textbook__metadata_text">Level:</span> <a href="#" onclick="Beginner">Beginner</a> | <a href="#" onclick="Expert">Advanced</a> </div>
               </div>
               <hr class="c-textbook__metadata_line">
               {% endif %}

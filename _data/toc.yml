@@ -27,94 +27,120 @@
   expand_sections: true
   sections:
   - title: What is machine learning?
-    url: /introduction/0-machine-learning
+    url: /introduction/0-1-machine-learning
     not_numbered: true
     
   - title: Supervised learning used in this course
-    url: /introduction/0-supervised-learning
+    url: /introduction/0-2-supervised-learning
     not_numbered: true
     
   - title: Main types of graphs used in this course
-    url: /introduction/0-graphs
+    url: /introduction/0-3-graphs
     not_numbered: true
     
   - title: .csv files - data format used in the course
-    url: /introduction/0-data
+    url: /introduction/0-4-data
     not_numbered: true
 
   - title: Get started with Python
-    url: /introduction/0-python
+    url: /introduction/0-5-python
     not_numbered: true
     expand_subsections:
     subsections:
 
     - title: Syntax and arithmetic
-      url: /introduction/python/0-1-syntax-arithmetic
+      url: /introduction/python/0-5-1-syntax-arithmetic
       not_numbered: true
 
     - title: Strings
-      url: /introduction/python/0-2-strings
+      url: /introduction/python/0-5-2-strings
       not_numbered: true
 
     - title: Lists and indexes
-      url: /introduction/python/0-3-lists
+      url: /introduction/python/0-5-3-lists
       not_numbered: true
 
     - title: Control flow statement
-      url: /introduction/python/0-4-control-flow
+      url: /introduction/python/0-5-4-control-flow
       not_numbered: true
 
     - title: Functions
-      url: /introduction/python/0-5-functions
+      url: /introduction/python/0-5-5-functions
       not_numbered: true
 
     - title: The Pandas library
-      url: /introduction/python/0-7-pandas
+      url: /introduction/python/0-5-6-pandas
       not_numbered: true
 
     - title: Plot graphics
-      url: /introduction/python/0-8-plot
+      url: /introduction/python/0-5-7-plot
       not_numbered: true
 
 
 - title: Part 1 - Numerical data
-  url: /chapter1-numerical/numericaldata
+  url: /1-numerical
   not_numbered: true
   expand_sections: true
   sections:
-  - title: Lecture
-    url: /chapter1-numerical/1-0-lecture
+  - title: The AIS data - messages sent by a ship along its trip
+    url: /chapter1-numerical/1-1-AIS-data
     not_numbered: true
     expand_subsections:
     subsections:
-
-    - title: The AIS data - messages sent by a ship along its trip
-      url: /chapter1-numerical/1-1-AIS-data
+    - title: Understand the data
+      url: /chapter1-numerical/1-1-1-understand
+      not_numbered: true
+    
+    - title: Examine the datasets
+      url: /chapter1-numerical/1-1-2-examine
       not_numbered: true
 
-    - title: Let's start with a few experiments
-      url: /chapter1-numerical/1-2-experiments
-      not_numbered: true
-
-    - title: How can we detect errors in AIS data?
-      url: /chapter1-numerical/1-3-errors-detection
-      not_numbered: true
-
-    - title: Towards fixing the data
-      url: /chapter1-numerical/1-4-mitigation
-      not_numbered: true
-
-    - title: Conclusion
-      url: /chapter1-numerical/1-5-conclusion
-      not_numbered: true
-
-  - title: Quiz
-    url: /chapter1-numerical/quiz1
+  - title: Missing data
+    url: /chapter1-numerical/1-2-missing
     not_numbered: true
+    expand_subsections:
+    subsections:
+    - title: Predict the width of a ship
+      url: /chapter1-numerical/1-2-1-width
+      not_numbered: true
+    
+    - title: Predict the mean speed from the type of vessel
+      url: /chapter1-numerical/1-2-2-meansog
+      not_numbered: true
+      
+    - title: How to deal with missing values?
+      url: /chapter1-numerical/1-2-3-whattodo
+      not_numbered: true
 
-  - title: Practical exercise
-    url: /chapter1-numerical/practicalexercise1
+  - title: Biased data
+    url: /chapter1-numerical/1-3-biased
     not_numbered: true
+    expand_subsections:
+    subsections:
+    - title: Type of task and predicted attributes
+      url: /chapter1-numerical/1-3-1-types
+      not_numbered: true
+    
+    - title: Attributes selection
+      url: /chapter1-numerical/1-3-2-att-selection
+      not_numbered: true
+      
+    - title: Prediction from all data vs. splitted dataset
+      url: /chapter1-numerical/1-3-3-splitted
+      not_numbered: true
+    
+  - title: Conclusion
+    url: /chapter1-numerical/1-4-conclusion
+    not_numbered: true
+    expand_subsections:
+    subsections:
+    - title: Practical task
+      url: /chapter1-numerical/1-4-1-practical-task
+      not_numbered: true
+      
+    - title: Practical task (Prototype nbgrader)
+      url: /chapter1-numerical/1-final
+      not_numbered: true
 
 
 - title: Part 2 - Image data
@@ -212,12 +238,16 @@
     
     
 - title: Appendix
-  url: /appendix/home
+  url: /A-appendix
   not_numbered: true
   expand_sections: true
   sections:
   - title: Modification to raw AIS data from U.S. Marine Cadastre
-    url: /appendix/1-AIS-modifications
+    url: /appendix/A-1-1-AIS-modifications
+    not_numbered: true
+    
+  - title: Machine learning algorithms and functions used for numerical prediction
+    url: /appendix/A-1-2-algorithms
     not_numbered: true
 
 - divider: true
