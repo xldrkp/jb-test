@@ -30,11 +30,11 @@ function dict2param(dict) {
 // Parse a Binder URL, converting it to the string needed for JupyterHub
 function binder2Jupyterhub(url) {
   newUrl = {};
-  parts = url.split('v2/gh/')[1];
+  parts = url.split('v2/git/')[1];
   // Grab the base repo information
   repoinfo = parts.split('?')[0];
   var [org, repo, ref] = repoinfo.split('/');
-  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['repo'] = ['https://collaborating.tuhh.de', org, repo].join('/');
   newUrl['branch'] = ref
   // Grab extra parameters passed
   params = getJsonFromUrl(url);
