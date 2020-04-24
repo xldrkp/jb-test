@@ -52,7 +52,7 @@
   <!-- Load Thebelab for interactive widgets -->
   {% include js/thebelab.html %}
 
-  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
+  <!-- Load the auto-generating TOC (non-async otherwise the TOC wont load w/ turbolinks) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.8.1/tocbot.min.js" async></script>
   <script src="{{ site.js_url | relative_url }}/page/tocbot.js"></script>
 
@@ -83,8 +83,8 @@
   <script src="{{ site.js_url | relative_url }}/page/hide-cell.js" async></script>
 
   <!-- Content Toggle Beginner/Expert -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+  <script src="{{ site.js_url | relative_url }}/page/contenttoggle.js" async></script>
 
   <!-- Printing the screen -->
   {% include js/print.html %}
