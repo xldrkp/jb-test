@@ -125,8 +125,8 @@
       url: /chapter1-numerical/1-3-2-att-selection
       not_numbered: true
       
-    - title: Prediction from all data vs. splitted dataset
-      url: /chapter1-numerical/1-3-3-splitted
+    - title: Prediction from all data vs. split dataset
+      url: /chapter1-numerical/1-3-3-split
       not_numbered: true
     
   - title: Conclusion
